@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import heroBg from "@/assets/hero-bg.jpg";
@@ -16,9 +17,7 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
         <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-          Building Tomorrow,
-          <br />
-          <span className="text-primary-foreground/90">Together</span>
+          Kothiwal Group
         </h1>
         
         <p className="text-xl md:text-2xl mb-8 font-light max-w-2xl mx-auto leading-relaxed">
