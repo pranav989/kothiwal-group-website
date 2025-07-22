@@ -8,8 +8,15 @@ const About = () => {
       
       <main className="pt-16">
         {/* Hero Section */}
-        <section className="py-20 bg-gradient-to-b from-primary/10 to-background">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <section className="py-20 bg-gradient-to-b from-primary/10 to-background relative overflow-hidden">
+          <div className="absolute inset-0 z-0">
+            <img 
+              src="/placeholder.svg?height=400&width=800&text=About+Background" 
+              alt="About Background" 
+              className="w-full h-full object-cover opacity-20"
+            />
+          </div>
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
               About Kothiwal Group
             </h1>

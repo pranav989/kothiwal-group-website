@@ -48,8 +48,15 @@ const Contact = () => {
       
       <main className="pt-16">
         {/* Hero Section */}
-        <section className="py-20 bg-gradient-to-b from-primary/10 to-background">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <section className="py-20 bg-gradient-to-b from-primary/10 to-background relative overflow-hidden">
+          <div className="absolute inset-0 z-0">
+            <img 
+              src="/placeholder.svg?height=400&width=800&text=Contact+Background" 
+              alt="Contact Background" 
+              className="w-full h-full object-cover opacity-20"
+            />
+          </div>
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
               Let's Connect
             </h1>
@@ -77,53 +84,60 @@ const Contact = () => {
                   </p>
                 </div>
 
-                <div className="space-y-6">
-                  <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Phone className="h-6 w-6 text-primary-foreground" />
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  {/* Phone and Email */}
+                  <div className="space-y-6">
+                    <div className="flex items-start space-x-4">
+                      <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center flex-shrink-0">
+                        <Phone className="h-6 w-6 text-primary-foreground" />
+                      </div>
+                      <div>
+                        <h3 className="text-lg font-semibold text-foreground mb-1">Phone</h3>
+                        <p className="text-muted-foreground">0512-2377372, 74</p>
+                        <p className="text-muted-foreground">9792340777</p>
+                      </div>
                     </div>
-                    <div>
-                      <h3 className="text-lg font-semibold text-foreground mb-1">Phone</h3>
-                      <p className="text-muted-foreground">+91 9415001967</p>
+
+                    <div className="flex items-start space-x-4">
+                      <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center flex-shrink-0">
+                        <Mail className="h-6 w-6 text-primary-foreground" />
+                      </div>
+                      <div>
+                        <h3 className="text-lg font-semibold text-foreground mb-1">Email</h3>
+                        <p className="text-muted-foreground">info@kothiwal.com</p>
+                      </div>
                     </div>
                   </div>
 
-                  <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Mail className="h-6 w-6 text-primary-foreground" />
+                  {/* Address and LinkedIn */}
+                  <div className="space-y-6">
+                    <div className="flex items-start space-x-4">
+                      <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center flex-shrink-0">
+                        <MapPin className="h-6 w-6 text-primary-foreground" />
+                      </div>
+                      <div>
+                        <h3 className="text-lg font-semibold text-foreground mb-1">Address</h3>
+                        <p className="text-muted-foreground">
+                          Kanpur, Uttar Pradesh, India
+                        </p>
+                      </div>
                     </div>
-                    <div>
-                      <h3 className="text-lg font-semibold text-foreground mb-1">Email</h3>
-                      <p className="text-muted-foreground">info@kothiwal.com</p>
-                    </div>
-                  </div>
 
-                  <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center flex-shrink-0">
-                      <MapPin className="h-6 w-6 text-primary-foreground" />
-                    </div>
-                    <div>
-                      <h3 className="text-lg font-semibold text-foreground mb-1">Address</h3>
-                      <p className="text-muted-foreground">
-                        Kanpur, Uttar Pradesh, India
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Linkedin className="h-6 w-6 text-primary-foreground" />
-                    </div>
-                    <div>
-                      <h3 className="text-lg font-semibold text-foreground mb-1">LinkedIn</h3>
-                      <a 
-                        href="https://linkedin.com/company/kothiwal-group" 
-                        className="text-primary hover:underline"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Connect with us on LinkedIn
-                      </a>
+                    <div className="flex items-start space-x-4">
+                      <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center flex-shrink-0">
+                        <Linkedin className="h-6 w-6 text-primary-foreground" />
+                      </div>
+                      <div>
+                        <h3 className="text-lg font-semibold text-foreground mb-1">LinkedIn</h3>
+                        <a 
+                          href="https://www.linkedin.com/company/kothiwal-textiles-limited/posts/?feedView=all" 
+                          className="text-foreground hover:underline"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Connect with us on LinkedIn
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
