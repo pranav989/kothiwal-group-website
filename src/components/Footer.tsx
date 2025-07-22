@@ -1,4 +1,4 @@
-import { Phone, Mail, Linkedin, Facebook, Twitter } from "lucide-react";
+import { Phone, Mail, Linkedin } from "lucide-react";
 import { Link } from "react-router-dom";
 import kothiwalLogo from "@/assets/kothiwal-logo.png";
 
@@ -25,7 +25,10 @@ const Footer = () => {
             <div className="space-y-2">
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4" />
-                <span>+91 9415001967</span>
+                <div className="flex flex-col">
+                  <span>0512-2377372, 74</span>
+                  <span>9792340777</span>
+                </div>
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4" />
@@ -49,20 +52,15 @@ const Footer = () => {
               <Link to="/" className="block hover:underline">Home</Link>
               <Link to="/about" className="block hover:underline">About Us</Link>
               <Link to="/contact" className="block hover:underline">Contact</Link>
+              <Link to="/charitable-trust" className="block hover:underline">Charitable Trust</Link>
             </div>
 
             {/* Social Media */}
             <div className="pt-4">
               <h4 className="text-sm font-medium mb-2">Follow Us</h4>
               <div className="flex space-x-3">
-                <a href="#" className="hover:text-primary-foreground/80 transition-colors">
+                <a href="https://www.linkedin.com/company/kothiwal-textiles-limited/posts/?feedView=all" target="_blank" rel="noopener noreferrer" className="hover:text-primary-foreground/80 transition-colors">
                   <Linkedin className="h-5 w-5" />
-                </a>
-                <a href="#" className="hover:text-primary-foreground/80 transition-colors">
-                  <Facebook className="h-5 w-5" />
-                </a>
-                <a href="#" className="hover:text-primary-foreground/80 transition-colors">
-                  <Twitter className="h-5 w-5" />
                 </a>
               </div>
             </div>

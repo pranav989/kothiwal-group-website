@@ -30,7 +30,8 @@ const companies = [
     tagline: "Hot Tea Crackling Coffee Taste",
     description: "We are a renowned name in the beverage industry that supplies state-of-the-art coffee vending machines and myriad tea products to Corporate and residential clients all over India. Taking into account the ever-increasing demands of our clients in the Retail, Ho.Re.Ca & Domestic Consumer market segments, we have come up with innovative coffee dispensing solutions that provide efficiency of the highest order.",
     image: coffeeImg,
-    reverse: false
+    reverse: false,
+    link: "https://www.irenesgroup.com/"
   },
   {
     id: 4,
@@ -54,7 +55,8 @@ const companies = [
     tagline: "Helping people grow",
     description: "We operates multiple social service projects in India. Most notably, we run a success school by the name Chi in a village (GOSAL near Sikri) Hathras, Uttar Pradesh, and provides education to more than 240 students every day. We are further planning to open multiple other facilities such as a Guest House and Exhibition hall in the same location.",
     image: charityImg,
-    reverse: true
+    reverse: true,
+    internalLink: "/charitable-trust"
   },
   {
     id: 7,
@@ -106,18 +108,39 @@ const CompanyCard = ({ company, index }: { company: typeof companies[0], index: 
         </div>
 
         {/* Content */}
-        <div className="w-full lg:w-1/2 p-6 lg:p-8">
-          <h3 className="text-2xl lg:text-3xl font-bold text-foreground mb-2">
-            {company.name}
-          </h3>
-          {company.tagline && (
-            <p className="text-lg text-primary font-semibold mb-4">
-              {company.tagline}
+        <div className="w-full lg:w-1/2 p-6 lg:p-8 flex flex-col justify-between">
+          <div>
+            <h3 className="text-2xl lg:text-3xl font-bold text-foreground mb-2">
+              {(company as any).link ? (
+                <a href={(company as any).link} target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+                  {company.name}
+                </a>
+              ) : (company as any).internalLink ? (
+                <a href={(company as any).internalLink} className="hover:text-primary transition-colors">
+                  {company.name}
+                </a>
+              ) : (
+                company.name
+              )}
+            </h3>
+            {company.tagline && (
+              <p className="text-lg text-primary font-semibold mb-4">
+                {company.tagline}
+              </p>
+            )}
+            <p className="text-muted-foreground leading-relaxed">
+              {company.description}
             </p>
+          </div>
+          
+          {/* Logo section for specific companies */}
+          {(company.id === 3 || company.id === 7) && (
+            <div className="mt-6 flex justify-end">
+              <div className="w-16 h-16 bg-muted rounded-lg flex items-center justify-center">
+                <img src="/placeholder.svg?height=40&width=40" alt={`${company.name} Logo`} className="w-10 h-10 object-contain" />
+              </div>
+            </div>
           )}
-          <p className="text-muted-foreground leading-relaxed">
-            {company.description}
-          </p>
         </div>
       </div>
     </div>
