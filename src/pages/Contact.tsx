@@ -48,15 +48,8 @@ const Contact = () => {
       
       <main className="pt-16">
         {/* Hero Section */}
-        <section className="py-20 bg-gradient-to-b from-primary/10 to-background relative overflow-hidden">
-          <div className="absolute inset-0 z-0">
-            <img 
-              src="/placeholder.svg?height=400&width=800&text=Contact+Background" 
-              alt="Contact Background" 
-              className="w-full h-full object-cover opacity-20"
-            />
-          </div>
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+        <section className="py-20 bg-gradient-to-b from-background to-muted">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
               Let's Connect
             </h1>

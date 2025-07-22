@@ -70,12 +70,19 @@ const CharitableTrust = () => {
                   </p>
                 </div>
                 
-                {/* School Campus Image */}
-                <div className="md:col-span-1">
+                {/* School Campus Images */}
+                <div className="md:col-span-1 space-y-4">
                   <div className="aspect-square bg-muted rounded-lg overflow-hidden">
                     <img 
                       src="/placeholder.svg?height=300&width=300&text=School+Campus" 
                       alt="Kothiwal Madhyamik Adarsh Vidya Mandir Campus" 
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="aspect-square bg-muted rounded-lg overflow-hidden">
+                    <img 
+                      src="/placeholder.svg?height=300&width=300&text=School+Classroom" 
+                      alt="Kothiwal Madhyamik Adarsh Vidya Mandir Classroom" 
                       className="w-full h-full object-cover"
                     />
                   </div>

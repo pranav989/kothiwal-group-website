@@ -111,7 +111,7 @@ const CompanyCard = ({ company, index }: { company: typeof companies[0], index: 
         <div className="w-full lg:w-1/2 p-6 lg:p-8 flex flex-col justify-between">
           <div>
             <div className="flex items-start justify-between">
-              <h3 className="text-2xl lg:text-3xl font-bold text-foreground mb-2 flex-1">
+              <h3 className="text-2xl lg:text-3xl font-bold text-foreground mb-2">
                 {(company as any).link ? (
                   <a href={(company as any).link} target="_blank" rel="noopener noreferrer" className="visible-link">
                     {company.name}
@@ -127,7 +127,7 @@ const CompanyCard = ({ company, index }: { company: typeof companies[0], index: 
               {/* Logo inline with heading for specific companies */}
               {(company.id === 3 || company.id === 7) && (
                 <div className="w-16 h-16 bg-muted rounded-lg flex items-center justify-center ml-4">
-                  <img src="/placeholder.svg?height=40&width=40" alt={`${company.name} Logo`} className="w-10 h-10 object-contain" />
+                  <span className="text-xs text-muted-foreground">Logo</span>
                 </div>
               )}
             </div>
