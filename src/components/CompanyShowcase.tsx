@@ -6,6 +6,8 @@ import constructionImg from "@/assets/construction.jpg";
 import estateImg from "@/assets/estate.jpg";
 import charityImg from "@/assets/charity.jpg";
 import textilesImg from "@/assets/textiles.jpg";
+import irenesLogo from "@/assets/irenes-logo.png";
+import kothiwalTextilesLogo from "@/assets/kothiwal-textiles-logo.png";
 
 const companies = [
   {
@@ -29,7 +31,7 @@ const companies = [
     name: "Irene's Coffee Company Pvt. Ltd.",
     tagline: "Hot Tea Crackling Coffee Taste",
     description: "We are a renowned name in the beverage industry that supplies state-of-the-art coffee vending machines and myriad tea products to Corporate and residential clients all over India. Taking into account the ever-increasing demands of our clients in the Retail, Ho.Re.Ca & Domestic Consumer market segments, we have come up with innovative coffee dispensing solutions that provide efficiency of the highest order.",
-    image: "/lovable-uploads/51bf9831-f683-4129-ba58-322604dccd7c.png",
+    image: "/lovable-uploads/8edbbdd2-a5c0-4987-b144-e10e380e77d1.png",
     reverse: false,
     link: "https://www.irenesgroup.com/"
   },
@@ -63,7 +65,7 @@ const companies = [
     name: "Kothiwal Textiles Pvt. Ltd.",
     tagline: "Bridging Trading Gaps",
     description: "We deal in the trade of Yarn & Fibre.",
-    image: "/lovable-uploads/010435a5-e0e1-490c-805a-9dba8c5dc06a.png",
+    image: "/lovable-uploads/64e9f600-1639-4f38-8448-163a7aa8b230.png",
     reverse: false
   }
 ];
@@ -125,9 +127,22 @@ const CompanyCard = ({ company, index }: { company: typeof companies[0], index: 
                 )}
               </h3>
               {/* Logo inline with heading for specific companies */}
-              {(company.id === 3 || company.id === 7) && (
-                <div className="w-16 h-16 bg-muted rounded-lg flex items-center justify-center ml-4">
-                  <span className="text-xs text-muted-foreground">Logo</span>
+              {company.id === 3 && (
+                <div className="w-16 h-16 rounded-lg flex items-center justify-center ml-4">
+                  <img 
+                    src="/lovable-uploads/eb2877bb-736b-48d0-9872-544f3e9d0342.png" 
+                    alt="Irene's Coffee Company Logo"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+              )}
+              {company.id === 7 && (
+                <div className="w-16 h-16 rounded-lg flex items-center justify-center ml-4">
+                  <img 
+                    src="/lovable-uploads/2eb4e4dc-5cfd-436d-bea0-c813f4ae6c65.png" 
+                    alt="Kothiwal Textiles Logo"
+                    className="w-full h-full object-contain"
+                  />
                 </div>
               )}
             </div>
