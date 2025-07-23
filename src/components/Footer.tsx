@@ -10,7 +10,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
-              <img src={kothiwalLogo} alt="Kothiwal Group" className="h-12 w-12" />
+              <img src="/lovable-uploads/2a072551-066e-4927-ae4e-5d4b0db04bb9.png" alt="Kothiwal Group" className="h-12 w-12" />
               <span className="text-2xl font-bold">Kothiwal Group</span>
             </div>
             <p className="text-primary-foreground/80 leading-relaxed">

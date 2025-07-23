@@ -34,16 +34,14 @@ const CharitableTrust = () => {
           {/* Video Section - Full Width */}
           <div className="mb-12">
             <div className="w-full aspect-video bg-muted rounded-lg overflow-hidden">
-              <video 
-                className="w-full h-full object-cover"
-                autoPlay
-                muted
-                loop
-                controls
-              >
-                <source src="/placeholder-video.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+              <iframe 
+                className="w-full h-full"
+                src="https://www.youtube.com/embed/H4tDclaMjYU"
+                title="Kothiwal Charitable Trust School Video"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
             </div>
           </div>
 
@@ -74,15 +72,15 @@ const CharitableTrust = () => {
                 <div className="md:col-span-1 space-y-4">
                   <div className="aspect-square bg-muted rounded-lg overflow-hidden">
                     <img 
-                      src="/placeholder.svg?height=300&width=300&text=School+Campus" 
-                      alt="Kothiwal Madhyamik Adarsh Vidya Mandir Campus" 
+                      src="/lovable-uploads/b4c63b6b-1559-4122-b12e-ded4bbd91ab0.png" 
+                      alt="कोठीवाल आदर्श विद्या मंदिर लोसल" 
                       className="w-full h-full object-cover"
                     />
                   </div>
                   <div className="aspect-square bg-muted rounded-lg overflow-hidden">
                     <img 
-                      src="/placeholder.svg?height=300&width=300&text=School+Classroom" 
-                      alt="Kothiwal Madhyamik Adarsh Vidya Mandir Classroom" 
+                      src="/lovable-uploads/c4a5c05c-7b0e-4eb5-ace6-3e963bebd7d5.png" 
+                      alt="कोठीवाल मा. आदर्श विद्या मंदिर लोसल (सीकर)" 
                       className="w-full h-full object-cover"
                     />
                   </div>

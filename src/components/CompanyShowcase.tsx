@@ -29,7 +29,7 @@ const companies = [
     name: "Irene's Coffee Company Pvt. Ltd.",
     tagline: "Hot Tea Crackling Coffee Taste",
     description: "We are a renowned name in the beverage industry that supplies state-of-the-art coffee vending machines and myriad tea products to Corporate and residential clients all over India. Taking into account the ever-increasing demands of our clients in the Retail, Ho.Re.Ca & Domestic Consumer market segments, we have come up with innovative coffee dispensing solutions that provide efficiency of the highest order.",
-    image: coffeeImg,
+    image: "/lovable-uploads/51bf9831-f683-4129-ba58-322604dccd7c.png",
     reverse: false,
     link: "https://www.irenesgroup.com/"
   },
@@ -63,7 +63,7 @@ const companies = [
     name: "Kothiwal Textiles Pvt. Ltd.",
     tagline: "Bridging Trading Gaps",
     description: "We deal in the trade of Yarn & Fibre.",
-    image: textilesImg,
+    image: "/lovable-uploads/010435a5-e0e1-490c-805a-9dba8c5dc06a.png",
     reverse: false
   }
 ];

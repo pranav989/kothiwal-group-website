@@ -21,7 +21,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo and Company Name */}
           <div className="flex items-center space-x-3">
-            <img src={kothiwalLogo} alt="Kothiwal Group" className="h-10 w-10" />
+            <img src="/lovable-uploads/2a072551-066e-4927-ae4e-5d4b0db04bb9.png" alt="Kothiwal Group" className="h-10 w-10" />
             <Link to="/" className="text-xl font-bold text-foreground hover:text-primary transition-colors">
               Kothiwal Group
             </Link>
