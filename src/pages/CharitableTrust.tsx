@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import charityBg from "@/assets/charity-bg.jpg";
 
 const CharitableTrust = () => {
   return (
@@ -8,12 +9,21 @@ const CharitableTrust = () => {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-b from-background to-muted">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-8">
+      <section className="relative py-20 flex items-center justify-center overflow-hidden">
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: `url(${charityBg})` }}
+        >
+          <div className="absolute inset-0 bg-primary/70"></div>
+        </div>
+
+        {/* Content */}
+        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+          <h1 className="text-4xl md:text-5xl font-bold mb-8">
             Kothiwal Charitable Trust
           </h1>
-          <p className="text-xl text-muted-foreground mb-12 leading-relaxed">
+          <p className="text-xl font-light mb-12 leading-relaxed">
             We oversee multiple social service projects in India. Most notably, we run a success school by till class 12th in a village LOSAL near Sikkar district in Rajasthan which is been managed by Rastriya Seva Sang. Further planning to open multiple other facilities such as a Guest House & Marriage hall in the same locality.
           </p>
         </div>
