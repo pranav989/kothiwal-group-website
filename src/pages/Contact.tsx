@@ -6,6 +6,7 @@ import { useToast } from "@/hooks/use-toast";
 import { Phone, Mail, MapPin, Linkedin } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import contactBg from "@/assets/contact-bg.jpg";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -48,12 +49,21 @@ const Contact = () => {
       
       <main className="pt-16">
         {/* Hero Section */}
-        <section className="py-20 bg-gradient-to-b from-background to-muted">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+        <section className="relative py-20 flex items-center justify-center overflow-hidden">
+          {/* Background Image */}
+          <div 
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            style={{ backgroundImage: `url(${contactBg})` }}
+          >
+            <div className="absolute inset-0 bg-primary/70"></div>
+          </div>
+
+          {/* Content */}
+          <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">
               Let's Connect
             </h1>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl font-light max-w-3xl mx-auto leading-relaxed">
               Please feel free to reach out to us for any inquiries, proposals, or potential business partnerships. 
               Your thoughts and ideas are important to us, and we are always open to exploring new opportunities together. 
               Please feel free to connect with us, as we look forward to collaborating and building fruitful relationships.

@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import aboutBg from "@/assets/about-bg.jpg";
 
 const About = () => {
   return (
@@ -8,12 +9,21 @@ const About = () => {
       
       <main className="pt-16">
         {/* Hero Section */}
-        <section className="py-20 bg-gradient-to-b from-background to-muted">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+        <section className="relative py-20 flex items-center justify-center overflow-hidden">
+          {/* Background Image */}
+          <div 
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            style={{ backgroundImage: `url(${aboutBg})` }}
+          >
+            <div className="absolute inset-0 bg-primary/70"></div>
+          </div>
+
+          {/* Content */}
+          <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">
               About Kothiwal Group
             </h1>
-            <p className="text-xl text-muted-foreground">
+            <p className="text-xl font-light">
               Our journey of growth, innovation, and community service
             </p>
           </div>
