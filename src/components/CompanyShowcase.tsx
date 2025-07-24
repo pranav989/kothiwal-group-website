@@ -19,6 +19,24 @@ const companies = [
     reverse: false
   },
   {
+    id: 3,
+    name: "Irene's Coffee Company Pvt. Ltd.",
+    tagline: "Hot Tea Crackling Coffee Taste",
+    description: "We are a renowned name in the beverage industry that supplies state-of-the-art coffee vending machines and myriad tea products to Corporate and residential clients all over India. Taking into account the ever-increasing demands of our clients in the Retail, Ho.Re.Ca & Domestic Consumer market segments, we have come up with innovative coffee dispensing solutions that provide efficiency of the highest order.",
+    image: "/lovable-uploads/8edbbdd2-a5c0-4987-b144-e10e380e77d1.png",
+    reverse: true,
+    link: "https://www.irenesgroup.com/"
+  },
+  {
+    id: 6,
+    name: "Kothiwal Charitable Trust",
+    tagline: "Helping people grow",
+    description: "We operates multiple social service projects in India. Most notably, we run a success school by the name Chi in a village (GOSAL near Sikri) Hathras, Uttar Pradesh, and provides education to more than 240 students every day. We are further planning to open multiple other facilities such as a Guest House and Exhibition hall in the same location.",
+    image: charityImg,
+    reverse: false,
+    internalLink: "/charitable-trust"
+  },
+  {
     id: 2,
     name: "Kothiwal Finance and Investment Ltd.",
     tagline: "Driving Financial Success",
@@ -27,21 +45,12 @@ const companies = [
     reverse: true
   },
   {
-    id: 3,
-    name: "Irene's Coffee Company Pvt. Ltd.",
-    tagline: "Hot Tea Crackling Coffee Taste",
-    description: "We are a renowned name in the beverage industry that supplies state-of-the-art coffee vending machines and myriad tea products to Corporate and residential clients all over India. Taking into account the ever-increasing demands of our clients in the Retail, Ho.Re.Ca & Domestic Consumer market segments, we have come up with innovative coffee dispensing solutions that provide efficiency of the highest order.",
-    image: "/lovable-uploads/8edbbdd2-a5c0-4987-b144-e10e380e77d1.png",
-    reverse: false,
-    link: "https://www.irenesgroup.com/"
-  },
-  {
     id: 4,
     name: "Chetna Buildwell Pvt. Ltd.",
     tagline: "Building the Future",
     description: "We deal in Real Estate development in various locations in and around India.",
     image: constructionImg,
-    reverse: true
+    reverse: false
   },
   {
     id: 5,
@@ -49,16 +58,7 @@ const companies = [
     tagline: "",
     description: "We deal in Infrastructure and reselling of land and other properties.",
     image: estateImg,
-    reverse: false
-  },
-  {
-    id: 6,
-    name: "Kothiwal Charitable Trust",
-    tagline: "Helping people grow",
-    description: "We operates multiple social service projects in India. Most notably, we run a success school by the name Chi in a village (GOSAL near Sikri) Hathras, Uttar Pradesh, and provides education to more than 240 students every day. We are further planning to open multiple other facilities such as a Guest House and Exhibition hall in the same location.",
-    image: charityImg,
-    reverse: true,
-    internalLink: "/charitable-trust"
+    reverse: true
   },
   {
     id: 7,

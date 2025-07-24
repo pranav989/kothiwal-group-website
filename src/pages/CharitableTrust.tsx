@@ -36,7 +36,7 @@ const CharitableTrust = () => {
             <div className="w-full aspect-video bg-muted rounded-lg overflow-hidden">
               <iframe 
                 className="w-full h-full"
-                src="https://www.youtube.com/embed/H4tDclaMjYU"
+                src="https://www.youtube.com/embed/H4tDclaMjYU?autoplay=1"
                 title="Kothiwal Charitable Trust School Video"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
