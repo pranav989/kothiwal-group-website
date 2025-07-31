@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 import healthcareImg from "@/assets/healthcare.jpg";
 import financeImg from "@/assets/finance.jpg";
 import coffeeImg from "@/assets/coffee.jpg";
@@ -119,9 +120,9 @@ const CompanyCard = ({ company, index }: { company: typeof companies[0], index: 
                     {company.name}
                   </a>
                 ) : (company as any).internalLink ? (
-                  <a href={(company as any).internalLink} className="visible-link">
+                  <Link to={(company as any).internalLink} className="visible-link">
                     {company.name}
-                  </a>
+                  </Link>
                 ) : (
                   company.name
                 )}
