@@ -15,7 +15,7 @@ const companies = [
     id: 1,
     name: "Kothiwal Healthcare Pvt. Ltd.",
     tagline: "Caring for Well-Being",
-    description: "We deal in German Homeopathic medicines by the name of Reckeweg since 1997. Ayurvedic med of Divya Pharmacy (Patanjali), Health Supplements & Nutraceuticals products by Rishi Naturals (Patanjali) and FMCG products of Patanjali. Ayurveda ltd (Patanjali) as Super Distributors for Kanpur and surrounding districts since 2012. We also provide logistic for pan India business.",
+    description: "We deal in German Homeopathic medicines by the name of Reckeweg since 1997, Ayurvedic medicines of Divya Pharmacy (Patanjali), Health Supplements & Nutraceuticals products by Patanjali and FMCG products of Patanjali Ayurveda ltd as Super Distributors for Kanpur and surrounding districts since 2012. We also provide logistics for its pan-India businesses.",
     image: healthcareImg,
     reverse: false
   },
