@@ -22,7 +22,7 @@ const companies = [
   {
     id: 3,
     name: "Irene's Coffee Company Pvt. Ltd.",
-    tagline: "Hot Tea Crackling Coffee Taste",
+    tagline: "Hot Tea and a Crackling Coffee Taste",
     description: "We are a renowned name in the beverage industry that supplies state-of-the-art coffee vending machines and myriad of tea products to Corporate and residential clients all over India. Taking into account the ever-increasing demands of our clients in the Retail, Ho.Re.Ca & Domestic Consumer market segments, we have come up with innovative coffee dispensing solutions that provide efficiency of the highest order.",
     image: "/lovable-uploads/8edbbdd2-a5c0-4987-b144-e10e380e77d1.png",
     reverse: true,
