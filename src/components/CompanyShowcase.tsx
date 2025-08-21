@@ -32,7 +32,7 @@ const companies = [
     id: 6,
     name: "Kothiwal Charitable Trust",
     tagline: "Helping people grow",
-    description: "We operates multiple social service projects in India. Most notably, we run a success school by the name Chi in a village (GOSAL near Sikri) Hathras, Uttar Pradesh, and provides education to more than 240 students every day. We are further planning to open multiple other facilities such as a Guest House and Exhibition hall in the same location.",
+    description: "We operate multiple social service projects in India. Most notably, we run a success school in a village called LOSAL near Sikar in Rajasthan. It provides education to more than 240 students every day. We are further planning to open multiple other facilities such as a Guest House and Exhibition hall in the same location.",
     image: charityImg,
     reverse: false,
     internalLink: "/charitable-trust"
