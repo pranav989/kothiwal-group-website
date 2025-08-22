@@ -30,6 +30,9 @@ const Hero = () => {
             <Link to="/about">About</Link>
           </Button>
           <Button asChild variant="hero" size="lg" className="min-w-[160px]">
+            <a href="#companies">Explore Companies</a>
+          </Button>
+          <Button asChild variant="hero" size="lg" className="min-w-[160px]">
             <Link to="/contact">Contact Us</Link>
           </Button>
         </div>
